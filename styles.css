@@ -314,4 +314,205 @@ body {
         text-align: center;
         gap: 30px;
     }
+
+    @media screen and (max-width: 768px) {
+    .slide {
+        background-size: cover;
+        background-position: top center; /* foca na parte superior */
+        min-height: 60vh;
+    }
+}
+/* 🔹 RESPONSIVIDADE GERAL 🔹 */
+
+/* Tablets (até 768px) */
+@media screen and (max-width: 768px) {
+
+    /* Header */
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .search {
+        min-width: 250px;
+        width: 80%;
+    }
+
+    .shop-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 0.9rem;
+    }
+
+    /* Carrossel */
+    .slide {
+        min-height: 50vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* Hero */
+    .hero {
+        height: 30vh;
+        justify-content: flex-start;
+        padding-left: 30px;
+    }
+
+    .hero-content {
+        text-align: left;
+        max-width: 90%;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+        margin-bottom: 8px;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .explore-btn {
+        padding: 8px 18px;
+        font-size: 0.9rem;
+    }
+
+    /* Categorias */
+    .categories h2 {
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+    }
+
+    .category-grid {
+        gap: 15px;
+    }
+
+    .category-item img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .category-item p {
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .footer-logo img {
+        width: 90px;
+    }
+
+    .footer-links h3,
+    .footer-social h3 {
+        font-size: 1rem;
+    }
+
+    .footer-links a {
+        font-size: 0.9rem;
+    }
+
+    .footer-social img {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+/* Smartphones (até 480px) */
+@media screen and (max-width: 480px) {
+
+    /* Header */
+    .logo {
+        max-width: 60px;
+    }
+
+    .main-header {
+        padding: 10px;
+    }
+
+    .search {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .shop-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Carrossel */
+    .slide {
+        min-height: 40vh;
+        background-size: contain;
+        background-position: center;
+    }
+
+    /* Hero */
+    .hero {
+        height: 25vh;
+        padding-left: 15px;
+    }
+
+    .hero h1 {
+        font-size: 1.4rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .explore-btn {
+        padding: 7px 15px;
+        font-size: 0.8rem;
+    }
+
+    /* Categorias */
+    .category-item img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .categories h2 {
+        font-size: 1.3rem;
+    }
+
+    .category-item p {
+        font-size: 0.85rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 30px 10px;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+
+    .footer-links h3,
+    .footer-social h3 {
+        font-size: 0.9rem;
+    }
+
+    .footer-links a {
+        font-size: 0.85rem;
+    }
+
+    .footer-social img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer-bottom {
+        font-size: 0.8rem;
+    }
+}
+
 }
