@@ -47,7 +47,7 @@ body {
 }
 .slide {
     background-color: #e8c17d;
-    min-height: 80vh;
+    min-height: 90vh;
     min-width: 100%;
     height: 100%;
     display: flex;
