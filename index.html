@@ -11,29 +11,42 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person,shopping_cart,storefront" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="menu.js" defer></script>
 </head>
 
 <body>
     <header class="main-header">
+    
+
+    <a href="index.html">
         <img class="logo" src="images/ProgrearHub_Logo-removebg-preview.png" alt="Progear Hub Logo">
-        <form class="search">
-            <input type="search" placeholder="Search for a product">
-            <button>
-                <img src="images/search_40dp_4A3D28_FILL0_wght400_GRAD0_opsz40.png" alt="Search">
-            </button>
-        </form>
-        <nav class="user-nav">
-            <a href="#"><span class="material-symbols-outlined">storefront</span></a>
-            <a href="#"><span class="material-symbols-outlined">person</span></a>
-            <a href="#"><span class="material-symbols-outlined">shopping_cart</span></a>
-        </nav>
-        <nav class="shop-nav">
-            <a href="#">Womens</a>
-            <a href="#">Mens</a>
-            <a href="#">Shoes</a>
-            <a href="#">Brands</a>
-        </nav>
-    </header>
+    </a>
+
+    <form class="search" method="get" action="/search.php">
+        <input type="search" name="q" placeholder="Search for a product">
+        <button>
+            <img src="images/search_40dp_4A3D28_FILL0_wght400_GRAD0_opsz40.png" alt="Search">
+        </button>
+    </form>
+
+    <nav class="user-nav">
+        <a href="stores.html"><span class="material-symbols-outlined">storefront</span></a>
+        <a href="account.html"><span class="material-symbols-outlined">person</span></a>
+        <a href="cart.html"><span class="material-symbols-outlined">shopping_cart</span></a>
+    </nav>
+
+    <nav class="shop-nav">
+        <a href="Womens.html">Womens</a>
+        <a href="Mens.html">Mens</a>
+        <a href="Shoes.html">Shoes</a>
+        <a href="Acessories.html">Accessories</a>         
+    </nav>
+</header>
+
      <!-- carousel -->
     <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "autoPlay": 3000, 
        "wrapAround": true,

@@ -487,6 +487,117 @@ body {
         font-size: 0.85rem;
     }
 
+    /* --- Adições / sobrescritas do outro código --- */
+
+/* header cor diferente (do outro código) - sobrescreve se quiser usar */
+.main-header {
+    background-color: #e8c17d; /* cor do outro código */
+}
+
+/* shop-nav estilo base do outro código (ajusta contraste) */
+.shop-nav {
+    width: 100%;
+    background-color: #4a3d28; /* marrom escuro do outro CSS */
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    flex-wrap: wrap;
+}
+.shop-nav a {
+    color: #ffe3b3;
+    text-decoration: none;
+    padding: 10px;
+}
+.shop-nav a:hover {
+    background-color: #ffe3b3;
+    color: #4a3d28;
+}
+
+/* user-nav do outro (tamanhos maiores) */
+.user-nav a {
+    font-size: 32pt; /* se achar grande, ajuste */
+    text-decoration: none;
+    color: #4a3d28;
+}
+.user-nav {
+    margin-right: 30px;
+}
+
+/* cards e layout tipo "content" do outro código (úteis se for usar cards) */
+.content {
+   margin: 3em auto;
+   max-width: 80vw;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   gap: 12pt;
+}
+.card {
+    flex: 1;
+    min-width: 360px;
+    background-color: #eeeeee;
+    border: 1px solid black;
+    border-radius: 6pt;
+    overflow: hidden;
+}
+.card img { max-width: 100%;
+padding: 50px;}
+.card-content { padding: 12pt;}
+.card-button {
+    text-decoration: none;
+    background-color: aliceblue;
+    border: 1px solid black;
+    display: block;
+    margin: auto;
+    padding: 6pt;
+    text-align: center;
+    border-radius: 6pt;
+    color: black;
+}
+
+/* banner do outro */
+.banner {
+    width: 100%;
+    background: linear-gradient( to right, purple, pink);
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer estilo alternativo do outro (apenas se quiser trocá-lo) */
+.main-footer {
+    min-height: 20vh;
+    background-color: #eeeeee;
+    padding: 12pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* botão do slide (mantive sua classe .slide-button) */
+.slide-button {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 12pt;
+    border-radius: 8pt;
+}
+
+
+    .logo { max-width: 40px; margin-left: 0; }
+
+    .search button { display: none; }
+    .search { min-width: auto; width: 80%; }
+
+    .user-nav { margin-right: 0; }
+
+    .card { min-width: 100%; }
+    .content { max-width: 90vw; }
+}
+
+
     /* Footer */
     .footer {
         padding: 30px 10px;
@@ -515,4 +626,3 @@ body {
     }
 }
 
-}
