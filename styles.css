@@ -416,3 +416,7 @@ body {
     .footer-social img { width: 20px; height: 20px; }
     .footer-bottom { font-size: 0.8rem; }
 }
+
+.categories a{
+    text-decoration: none;
+}
