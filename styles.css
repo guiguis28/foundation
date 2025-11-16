@@ -408,7 +408,7 @@ body {
     .search { width: 100%; min-width: unset; }
     .shop-nav { flex-direction: column; width: 100%; }
 
-    .slide { min-height: 40vh; background-size: contain; background-position: center; }
+    .slide { min-height: 30vh; background-size: cover; background-position: center; width: 100%; object-fit: cover; }
 
     .hero { height: 25vh; padding-left: 15px; }
     .hero h1 { font-size: 1.4rem; }
